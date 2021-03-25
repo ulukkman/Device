@@ -24,3 +24,51 @@
   src: url(../fonts/opensanslight.woff) format("woff"),
   url(../fonts/opensanslight.woff2) format("woff2");
 }
+
+body {
+  min-width: 1200px;
+  font-size: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  line-height: 38px;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%);
+
+  border: 4px solid #ffc600;
+  z-index: -1;
+}
+
+.btn:hover {
+  background-color: #ffc600;
+}
+
+.line-block {
+  display: block;
+  position: absolute;
+
+  width: 80px;
+  height: 7px;
+  background-color: #ffffff;
+}
