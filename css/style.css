@@ -72,3 +72,383 @@ body {
   height: 7px;
   background-color: #ffffff;
 }
+
+/* =============================
+            HEADER
+============================= */
+
+.main-header {
+  position: relative;
+  width: 1160px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffe294;
+  color: #000000;
+}
+
+/* отключаю элемента */
+.site-logo {
+  font-size: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.header-logo {
+  position: absolute;
+  top: -28px;
+  left: 57px;
+}
+
+.header-logo a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header-logo a:hover {
+  color: #444444;
+}
+
+.header-logo a:active {
+  color: #666666;
+}
+
+.container {
+  padding-top: 34px;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 1040px;
+  margin: 0;
+}
+
+.header-user-block {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.main-header-search {
+  display: flex;
+
+  min-width: 55px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-header-search .search {
+  border: 0;
+  width: 355px;
+  height: 49px;
+  background-color: transparent;
+  color: #000000;
+  padding-left: 40px;
+  opacity: 0.3;
+}
+
+.main-header-search .search:hover {
+  opacity: 0.6;
+}
+
+.main-header-search .search:focus {
+  border-bottom: 2px solid #000000;
+  opacity: 1;
+
+  outline: 1px transparent;
+}
+
+.main-header-search .search:focus + .search-btn {
+  display: block;
+}
+
+.main-header-search::before {
+  content: "";
+  position: absolute;
+
+  top: 14px;
+  left: -2px;
+
+  width: 23px;
+  height: 23px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -365px -7px;
+  z-index: 10;
+
+}
+
+.search-btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 354px;
+
+  width: 85px;
+  height: 49px;
+  border: 2px solid #000000;
+  background-color: transparent;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.search-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-btn:active {
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.user-block {
+  position: relative;
+  width: 253px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
+.shop-activity {
+  width: 210px;
+  margin: auto 0;
+  margin-left: 10px;
+}
+
+.username {
+  width: 135px;
+  line-height: 36px;
+  color: #000000;
+  margin-right: 15px;
+}
+
+.logout {
+  width: 45px;
+  height: 18px;
+}
+
+.user-block .logout {
+  opacity: 0.3;
+}
+
+.user-block a,
+.shop-activity a {
+  color: #000000;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.user-block .login {
+  display: inline-block;
+  position: relative;
+
+  width: 50px;
+  height: 18px;
+}
+
+.user-block .login::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -26px;
+
+  width: 13px;
+  height: 20px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -571px -7px;
+}
+
+.user-block .username::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -24px;
+
+  width: 13px;
+  height: 20px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -571px -7px;
+  opacity: 1;
+}
+
+.header-user-block .logout:hover,
+.header-user-block .compare:hover,
+.header-user-block .basket:hover,
+.header-user-block .login:hover {
+  opacity: 0.6;
+}
+
+.header-user-block .logout:active,
+.header-user-block .compare:active,
+.header-user-block .basket:active,
+.header-user-block .login:active {
+  opacity: 0.3;
+}
+
+.shop-activity .compare {
+  display: inline-block;
+  position: relative;
+
+  width: 80px;
+  height: 18px;
+  padding-left: 17px;
+}
+
+.shop-activity .compare::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -3px;
+
+  width: 13px;
+  height: 10px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -74px -10px;
+}
+
+.shop-activity .basket {
+  display: inline-block;
+  position: relative;
+
+  width: 60px;
+  height: 18px;
+  padding-left: 48px;
+}
+
+.shop-activity .basket::before {
+  content: "";
+  position: absolute;
+
+  left: 26px;
+
+  width: 13px;
+  height: 17px;
+  background: #FFE27F url("../img/spritesheet.png") no-repeat;
+  background-position: -10px -7px;
+}
+
+.main-navigation {
+  width: 1040px;
+
+}
+
+.main-navigation li {
+  display: inline-block;
+  position: relative;
+}
+
+.header-navigation {
+  margin-left: auto;
+}
+
+.header-navigation .warranty {
+  margin-left: 26px;
+}
+
+.header-navigation .contacts {
+  margin-left: 100px;
+  margin-right: -4px;
+}
+
+.header-navigation ul {
+  padding: 0;
+}
+
+.main-navigation > ul {
+  display: flex;
+  font-size: 18px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-left: 0;
+  margin-top: 31px;
+  margin-bottom: 0;
+}
+
+li > a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.dropdown-menu:hover,
+.header-navigation li:hover {
+  opacity: 0.6;
+}
+
+.dropdown-menu:active,
+.header-navigation li:active {
+  opacity: 0.3;
+}
+
+.dropdown-menu-content {
+  position: relative;
+  min-width: 500px;
+  padding-bottom: 55px;
+}
+
+/* отключаю элемента */
+.main-navigation .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 56px;
+  left: -60px;
+
+  width: 1100px;
+  height: 132px;
+  padding-left: 60px;
+  background-color: #ffe393;
+  z-index: 100;
+}
+
+.dropdown-content a {
+  font-size: 15px;
+  font-family: "Opan Sans", "Arial", sans-serif;
+  font-weight: 300;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #000000;
+  line-height: 36px;
+}
+
+.dropdown-content a:hover {
+  opacity: 0.6;
+}
+
+.dropdown-content a:active {
+  opacity: 0.3;
+}
+
+.dropdown-content ul {
+  display: inline-block;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-menu::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 254px;
+
+  width: 16px;
+  height: 16px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -647px -10px;
+}
+
+.dropdown-content ul {
+  padding-left: 0;
+  padding-right: 60px;
+}
+
+.dropdown-menu-content:hover > .dropdown-content {
+  display: flex;
+}
+
+.dropdown-content:hover {
+  display: flex;
+}
