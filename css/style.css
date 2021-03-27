@@ -708,3 +708,89 @@ li > a {
 #btn-3:checked ~ .slides .slide:nth-child(3) {
   display: flex;
 }
+
+/* =============================
+            POPULAR
+============================= */
+
+.popular {
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 69px;
+}
+
+.popular ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.popular li {
+  display: inline-block;
+  width: 160px;
+  margin-right: 40px;
+}
+
+a:hover > .popular-img {
+  background-color: #ffc600;
+}
+
+.popular li:active {
+  opacity: 0.3;
+}
+
+.popular a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.popular-img {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  background-color: #ffe294;
+}
+
+.popular-img img {
+  margin: auto;
+}
+
+.popular-img.img-1 img {
+  margin-top: 52px;
+}
+
+.popular-img.img-2 img {
+  margin-bottom: 0;
+  margin-left: 38px;
+}
+
+.popular-img.img-3 img {
+  margin-top: 38px;
+  margin-left: 49px;
+}
+
+.popular-img.img-4 img {
+  margin-top: 50px;
+  margin-left: 28px;
+}
+
+.popular-img.img-5 img {
+  margin-left: 55px;
+  margin-top: 32px;
+}
+
+.popular-img.img-6 img {
+  margin-top: 49px;
+  margin-left: 13px;
+}
+
+.popular-title {
+  font-size: 18px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  margin-top: 35px;
+}
+
+.popular-title.shorter {
+  width: 100px;
+}
