@@ -958,3 +958,112 @@ a:hover > .popular-img {
 .vive img:hover {
   background-image: url("../img/logo-4.png");
 }
+
+/* =============================
+            INFORMATION
+============================= */
+
+.information {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 49px;
+  padding-bottom: 83px;
+}
+
+.info {
+  position: relative;
+  width: 470px;
+}
+
+.information .line-block {
+  background-color: #000000;
+  top: -49px;
+  left: 0;
+}
+
+.contact .line-block {
+  left: 2px;
+}
+
+.information .content-text {
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+
+.information .second {
+  width: 480px;
+  margin-top: 30px;
+}
+
+.information .third {
+  width: 510px;
+}
+
+.info ul {
+  list-style-type: none;
+  font-size: 16px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  line-height: 30px; /* костыль или странный размер */
+  color: #000000;
+  margin-top: 71px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.info li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.list-item::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 0;
+
+  width: 10px;
+  height: 10px;
+  background:  url("../img/spritesheet.png") no-repeat;
+  background-position: -715px -10px;
+  opacity: 0.3;
+}
+
+.list-item-title {
+  padding-left: 35px;
+  opacity: 1;
+}
+
+.information .btn {
+  min-width: 260px;
+  box-sizing: border-box;
+}
+
+.information .btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.info .btn {
+  display: inline-block;
+  margin-top: 50px;
+  padding-left: 22px;
+}
+
+
+
+.contact {
+  position: relative;
+  flex-direction: column;
+  width: 562px;
+  margin-left: auto;
+}
+
+.contact-map {
+  margin-top: 40px;
+}
+
+.contact .btn {
+  margin-top: 66px;
+  padding-left: 42px;
+}
